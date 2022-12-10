@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/home.css" />
+    <link rel="stylesheet" href="./styles/swiper.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <img src="/img/logo.png" alt="logo" />
+        <nav class="links">
+          <ul>
+            <li><a href=""> Главная </a></li>
+            <li><a href=""> Почему именно мы? </a></li>
+            <li><a href=""> Контакты </a></li>
+          </ul>
+          <button>Заказть</button>
+        </nav>
+
+        <img src="/img/burger.png" alt="burger" style="float: left; display: none; cursor: pointer;">
+
+    </header>
+
+      <section id="aboute">
+        <div class="title">
+          <h1>РАЗРАБОТКА САЙТОВ</h1>
+          <h3>ДЛЯ ТВОЕГО БИЗНЕСА</h3>
+
+          <p>
+            Мы - студия web-разработки, работаем уже более 3-х лет, готовы
+            разработать для вас сайт в кротчайшие сроки.
+          </p>
+          <div class="btns">
+            <button>
+              Подробнее
+              <!-- <img src="/img/arrow-btn.png" alt="arrow" /> -->
+            </button>
+
+            <a class="link" href="#">Остались вопросы?</a>
+          </div>
+        </div>
+        <!-- <div class="images"> -->
+        <img class="person" src="/img/Person.png" alt="person" />
+        <!-- <img class="cicrle" src="/img/circle.png" alt="cicrle" /> -->
+        <!-- </div> -->
+      </section>
+
+      <div class="line"></div>
+
+      <div id="cooperation">
+        <div class="cards">
+          <div class="text">
+            <h3 class="text__title">Причины сотрудничать с нами</h3>
+            <p class="text__desc">
+              Пока конкуренты говорят о том, что они лучшие - мы это доказываем
+              делом.
+            </p>
+            <p class="text__desc_mr">
+              Вы можете ознакомиться с информацией о нас и посмотреть наше
+              портфолио
+            </p>
+
+            <a href="#" class="text__link">Портфолио</a>
+          </div>
+          <div class="card">
+            <div class="card__texts">
+              <h1 class="card__title">Приемлимые цены</h1>
+              <p class="card__desc">
+                Мы максимально оптимизируем наш труд, для того, чтобы цены были
+                доступными
+              </p>
+            </div>
+            <img class="money" src="/img/money.png" alt="money" />
+          </div>
+
+          <div class="card">
+            <div class="card__texts">
+              <h1 class="card__title">В сроки сдаем работу!</h1>
+              <p class="card__desc">
+                Расписываем каждый этап по срокам, и придерживаемся дедлайнов
+              </p>
+            </div>
+            <img class="time" src="/img/time.png" alt="money" />
+          </div>
+          <div class="card">
+            <div class="card__texts">
+              <h1 class="card__title">Команда специалистов</h1>
+              <p class="card__desc">
+                В нашей команде множество специалистов, и каждый из них хорошо
+                знает свое дело
+              </p>
+            </div>
+            <img class="emplay" src="/img/emplay.png" alt="money" />
+          </div>
+          <div class="card">
+            <div class="card__texts">
+              <h1 class="card__title">Консультация перед заказом</h1>
+              <p class="card__desc">
+                Наши менеджеры в сети 24/7, и готовы помочь вам, а так же
+                ответить на ваши вопросы
+              </p>
+            </div>
+            <img class="support" src="/img/support.png" alt="money" />
+          </div>
+        </div>
+      </div>
+
+      <section id="portfolio">
+        <div class="portfolio__texts">
+          <h1 class="portfolio__texts_title">Наше портфолио</h1>
+          <p class="portfolio__texts_desc">
+            В данном портфолио вы сможете увидеть кейсы наших работ на 2022 -
+            2023 год
+          </p>
+          <a href="#">Компьютерные версии</a>
+        </div>
+        <div class="swiper portfolio">
+          <div class="swiper-wrapper portfolio__slider">
+            <div class="swiper-slide portfolio__border">
+              <img class="card__img" src="/img/Slide-1.png" alt="slide-1" />
+            </div>
+
+            <div class="swiper-slide portfolio__border">
+              <img class="card__img" src="/img/Slide-2.png" alt="slide-2" />
+            </div>
+
+            <div class="swiper-slide portfolio__border">
+              <img class="card__img" src="/img/Slide-3.png" alt="slide-3" />
+            </div>
+
+            <div class="swiper-slide portfolio__border">
+              <img class="card__img" src="/img/Slide-4.png" alt="slide-4" />
+            </div>
+
+            <!-- <div class="swiper-slide portfolio__border">
+              <img class="card__img"  src="/img/Slide-5.png" alt="slide-5" />
+            </div>
+
+            <div class="swiper-slide portfolio__border">
+              <img  class="card__img" src="/img/Slide-6.png" alt="slide-6" />
+            </div> -->
+          </div>
+        </div>
+        <div class="portfolio__arrows">
+          <div class="circle">
+            <button
+              class="swiper-button-prev arrow portfolio__arrow-right"
+            ></button>
+          </div>
+          <div class="circle">
+            <button
+              class="swiper-button-next arrow portfolio__arrow-left"
+            ></button>
+          </div>
+        </div>
+      </section>
+
+      <section id="tariffs">
+        <div class="swiper tariffs">
+          <h1 class="tariffs__title">Тарифы</h1>
+          <div class="swiper-wrapper">
+            <div class="tariffs__card">
+              <h3 class="tariffs__card__title">Сайт “Каталог”</h3>
+              <p class="tariffs__card__desc">
+                Сайт-каталог – это полноценный веб-ресурс, в котором потребители
+                могут ознакомиться с товарами или услугами компании. Являясь
+                удобным инструментом продаж, сайт-каталог может повысить
+                доходность бизнеса и упростить задачу по предоставлению
+                ассортимента целевой аудитории.
+              </p>
+              <div class="tariffs__card__foot">
+                <div class="tariffs__card__prices">
+                  <h4 class="tariffs__card__price_1">От 60.000₽</h4>
+                  <p class="tariffs__card__price_2">От 15 дней</p>
+                </div>
+                <button class="tariffs__card__link">
+                  <a href="#">Подробнее</a>
+                </button>
+              </div>
+            </div>
+            <!-- <div class="swiper-slide tariffs__card">
+              <h3 class="tariffs__card__title">Сайт “Каталог”</h3>
+              <p class="tariffs__card__desc">
+                Сайт-каталог – это полноценный веб-ресурс, в котором потребители
+                могут ознакомиться с товарами или услугами компании. Являясь
+                удобным инструментом продаж, сайт-каталог может повысить
+                доходность бизнеса и упростить задачу по предоставлению
+                ассортимента целевой аудитории.
+              </p>
+              <div class="tariffs__card__foot">
+                <div class="tariffs__card__prices">
+                  <h4 class="tariffs__card__price_1">От 60.000₽</h4>
+                  <p class="tariffs__card__price_2">От 15 дней</p>
+                </div>
+                <button class="tariffs__card__link">
+                  <a href="#">Подробнее</a>
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide tariffs__card">
+              <h3 class="tariffs__card__title">Сайт “Каталог”</h3>
+              <p class="tariffs__card__desc">
+                Сайт-каталог – это полноценный веб-ресурс, в котором потребители
+                могут ознакомиться с товарами или услугами компании. Являясь
+                удобным инструментом продаж, сайт-каталог может повысить
+                доходность бизнеса и упростить задачу по предоставлению
+                ассортимента целевой аудитории.
+              </p>
+              <div class="tariffs__card__foot">
+                <div class="tariffs__card__prices">
+                  <h4 class="tariffs__card__price_1">От 60.000₽</h4>
+                  <p class="tariffs__card__price_2">От 15 дней</p>
+                </div>
+                <button class="tariffs__card__link">
+                  <a href="#">Подробнее</a>
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide tariffs__card">
+              <h3 class="tariffs__card__title">Сайт “Каталог”</h3>
+              <p class="tariffs__card__desc">
+                Сайт-каталог – это полноценный веб-ресурс, в котором потребители
+                могут ознакомиться с товарами или услугами компании. Являясь
+                удобным инструментом продаж, сайт-каталог может повысить
+                доходность бизнеса и упростить задачу по предоставлению
+                ассортимента целевой аудитории.
+              </p>
+              <div class="tariffs__card__foot">
+                <div class="tariffs__card__prices">
+                  <h4 class="tariffs__card__price_1">От 60.000₽</h4>
+                  <p class="tariffs__card__price_2">От 15 дней</p>
+                </div>
+                <button class="tariffs__card__link">
+                  <a href="#">Подробнее</a>
+                </button>
+              </div>
+            </div> -->
+          </div>
+          <div class="tariffs__arrows">
+            <div class="circle">
+              <button class="arrow tariffs__arrow-right"><</button>
+            </div>
+            <div class="circle">
+              <button class="arrow tariffs__arrow-left">></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="request">
+        <div class="request__body">
+          <h1>Оставь заявку</h1>
+          <div class="request__body__inputs">
+            <div class="name">
+              <p>Ваше ФИО</p>
+              <input type="text" />
+            </div>
+            <div class="phone">
+              <p>Ваш номер телефона</p>
+              <input type="number" />
+            </div>
+            <div class="budget">
+              <p>Бюджет на сайт</p>
+              <input type="text" />
+            </div>
+            <div class="email">
+              <p>Ваш E-MAIL адрес</p>
+              <input type="email" />
+            </div>
+            <div class="comment">
+              <p>Ваш комментарий ( по желанию )</p>
+              <input type="text" />
+            </div>
+          </div>
+          <img src="/img/telephone.png" alt="telephone" />
+        </div>
+      </section>
+
+      <footer id="footer">
+        <h1 class="footer__title">Контакты</h1>
+        <div class="footer__contacts">
+          <ul>
+            <li>
+              <a href="#">
+                <div
+                  style="
+                    background-color: white;
+                    border-radius: 100%;
+                    width: 90px;
+                    height: 90px;
+                  "
+                >
+                  <img class="behance" src="/img/behance.svg" alt="icon" />
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div
+                  style="
+                    background-color: white;
+                    border-radius: 100%;
+                    width: 90px;
+                    height: 90px;
+                  "
+                >
+                  <img class="group" src="/img/Group.svg" alt="icon" />
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div
+                  style="
+                    background-color: white;
+                    border-radius: 100%;
+                    width: 90px;
+                    height: 90px;
+                  "
+                >
+                  <img class="telegram" src="/img/Telegram.svg" alt="icon" />
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div
+                  style="
+                    background-color: white;
+                    border-radius: 100%;
+                    width: 90px;
+                    height: 90px;
+                  "
+                >
+                  <img class="gmail" src="/img/gmail.svg" alt="icon" />
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div
+                  style="
+                    background-color: white;
+                    border-radius: 100%;
+                    width: 90px;
+                    height: 90px;
+                  "
+                >
+                  <img class="vk" src="/img/Vector.svg" alt="icon" />
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="footer__desc">
+          © 2019–2022, WEB Studio - webdevstudio23@gmail.com
+        </p>
+        <p class="footer__desc1">
+          Политика сайта и обработка персональных данных
+        </p>
+      </footer>
+    </div>
+    <script src="./scripts/home-app.js"></script>
+    <script src="./scripts/swiper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+      // var tarifr = new Swiper(".tariffs", {
+      //   loop: true,
+      //   speed: 500,
+      //   pagination: {
+      //     clickable: true,
+      //   },
+      //   navigation: {
+      //     nextEl: ".swiper-button-next",
+      //     prevEl: ".swiper-button-prev",
+      //   },
+      // });
+
+      var portfolio = new Swiper(".portfolio", {
+        loop: true,
+        speed: 500,
+        pagination: {
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
