@@ -6,56 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/home.css" />
     <link rel="stylesheet" href="./styles/swiper.css" />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-    />
+    /> -->
     <title>Document</title>
   </head>
   <body>
     <div id="container">
-      <header>
-        <img src="/img/logo.png" alt="logo" />
-        <nav class="links">
-          <ul>
-            <li><a href=""> Главная </a></li>
-            <li><a href=""> Почему именно мы? </a></li>
-            <li><a href=""> Контакты </a></li>
-          </ul>
-          <button>Заказть</button>
-        </nav>
-
-        <img src="/img/burger.png" alt="burger" style="float: left; display: none; cursor: pointer;">
-
-    </header>
-
       <section id="aboute">
-        <div class="title">
-          <h1>РАЗРАБОТКА САЙТОВ</h1>
-          <h3>ДЛЯ ТВОЕГО БИЗНЕСА</h3>
+        <div class="container__header">
+          <img src="/img/logo.png" alt="logo" />
+          <nav class="links">
+            <ul>
+              <li><a href="#"> Главная </a></li>
+              <li><a href="#"> Почему именно мы? </a></li>
+              <li><a href="#"> Контакты </a></li>
+            </ul>
+            <button>Заказть</button>
+          </nav>
 
-          <p>
-            Мы - студия web-разработки, работаем уже более 3-х лет, готовы
-            разработать для вас сайт в кротчайшие сроки.
-          </p>
-          <div class="btns">
-            <button>
-              Подробнее
-              <!-- <img src="/img/arrow-btn.png" alt="arrow" /> -->
-            </button>
-
-            <a class="link" href="#">Остались вопросы?</a>
-          </div>
+          <img
+            src="/img/burger.png"
+            alt="burger"
+            style="float: left; display: none; cursor: pointer"
+          />
         </div>
-        <!-- <div class="images"> -->
-        <img class="person" src="/img/Person.png" alt="person" />
-        <!-- <img class="cicrle" src="/img/circle.png" alt="cicrle" /> -->
-        <!-- </div> -->
+        <div class="container__main">
+          <div class="title">
+            <h1>РАЗРАБОТКА САЙТОВ</h1>
+            <h3>ДЛЯ ТВОЕГО БИЗНЕСА</h3>
+
+            <p>
+              Мы - студия web-разработки, работаем уже более 3-х лет, готовы
+              разработать для вас сайт в кротчайшие сроки.
+            </p>
+            <div class="btns">
+              <button>
+                Подробнее
+                <img src="/img/arrow-btn.png" alt="arrow" />
+              </button>
+
+              <a class="link" href="#">Остались вопросы?</a>
+            </div>
+          </div>
+
+          <img class="person" src="/img/Person.png" alt="person" />
+          <img class="cicrle" src="/img/circle.png" alt="cicrle" />
+        </div>
       </section>
+      <div class="line"><img src="./img/line.png" alt="" /></div>
 
-      <div class="line"></div>
-
-      <div id="cooperation">
+      <section id="cooperation">
         <div class="cards">
           <div class="text">
             <h3 class="text__title">Причины сотрудничать с нами</h3>
@@ -111,7 +113,7 @@
             <img class="support" src="/img/support.png" alt="money" />
           </div>
         </div>
-      </div>
+      </section>
 
       <section id="portfolio">
         <div class="portfolio__texts">
@@ -140,34 +142,41 @@
               <img class="card__img" src="/img/Slide-4.png" alt="slide-4" />
             </div>
 
-            <!-- <div class="swiper-slide portfolio__border">
-              <img class="card__img"  src="/img/Slide-5.png" alt="slide-5" />
+            <div class="swiper-slide portfolio__border">
+              <img class="card__img" src="/img/Slide-5.png" alt="slide-5" />
             </div>
 
             <div class="swiper-slide portfolio__border">
-              <img  class="card__img" src="/img/Slide-6.png" alt="slide-6" />
-            </div> -->
+              <img class="card__img" src="/img/Slide-6.png" alt="slide-6" />
+            </div>
           </div>
         </div>
         <div class="portfolio__arrows">
-          <div class="circle">
-            <button
-              class="swiper-button-prev arrow portfolio__arrow-right"
-            ></button>
-          </div>
-          <div class="circle">
-            <button
-              class="swiper-button-next arrow portfolio__arrow-left"
-            ></button>
-          </div>
+          <!-- <div class="circle"> -->
+          <img
+            class="swiper-button-prev left"
+            src="./img/arrow-left.svg"
+            alt="arrow"
+          />
+          <!-- </div> -->
+          <!-- <div class="circle"> -->
+          <img
+            class="swiper-button-next right"
+            src="./img/arrow-right.svg"
+            alt="arrow"
+          />
+          <!-- </div> -->
         </div>
       </section>
 
       <section id="tariffs">
-        <div class="swiper tariffs">
-          <h1 class="tariffs__title">Тарифы</h1>
-          <div class="swiper-wrapper">
-            <div class="tariffs__card">
+        <h1 class="tariffs__title">Тарифы</h1>
+        <div class="container">
+          <input type="radio" name="slider" id="item-1" checked />
+          <input type="radio" name="slider" id="item-2" />
+          <input type="radio" name="slider" id="item-3" />
+          <div class="cards">
+            <label class="card" for="item-1" id="song-1">
               <h3 class="tariffs__card__title">Сайт “Каталог”</h3>
               <p class="tariffs__card__desc">
                 Сайт-каталог – это полноценный веб-ресурс, в котором потребители
@@ -185,73 +194,92 @@
                   <a href="#">Подробнее</a>
                 </button>
               </div>
-            </div>
-            <!-- <div class="swiper-slide tariffs__card">
-              <h3 class="tariffs__card__title">Сайт “Каталог”</h3>
+            </label>
+            <label class="card" for="item-2" id="song-2">
+              <h3 class="tariffs__card__title">Сайт “Визитка”</h3>
               <p class="tariffs__card__desc">
-                Сайт-каталог – это полноценный веб-ресурс, в котором потребители
-                могут ознакомиться с товарами или услугами компании. Являясь
-                удобным инструментом продаж, сайт-каталог может повысить
-                доходность бизнеса и упростить задачу по предоставлению
-                ассортимента целевой аудитории.
+                Сайт-визитка - компактный веб-ресурс – отличный старт бизнеса в
+                интернете. Сайт-визитка содержит несколько страниц, в том числе
+                – информацию о компании, её товарах и услугах, прейскурант цен,
+                контакты и координаты для связи.
               </p>
               <div class="tariffs__card__foot">
                 <div class="tariffs__card__prices">
-                  <h4 class="tariffs__card__price_1">От 60.000₽</h4>
-                  <p class="tariffs__card__price_2">От 15 дней</p>
+                  <h4 class="tariffs__card__price_1">От 30.000₽</h4>
+                  <p class="tariffs__card__price_2">От 5 дней</p>
                 </div>
                 <button class="tariffs__card__link">
                   <a href="#">Подробнее</a>
                 </button>
               </div>
-            </div>
-            <div class="swiper-slide tariffs__card">
-              <h3 class="tariffs__card__title">Сайт “Каталог”</h3>
+            </label>
+            <label class="card" for="item-3" id="song-3">
+              <h3 class="tariffs__card__title">Сайт “Интернет магизин”</h3>
               <p class="tariffs__card__desc">
-                Сайт-каталог – это полноценный веб-ресурс, в котором потребители
-                могут ознакомиться с товарами или услугами компании. Являясь
-                удобным инструментом продаж, сайт-каталог может повысить
-                доходность бизнеса и упростить задачу по предоставлению
-                ассортимента целевой аудитории.
+                Сайт-визитка - компактный веб-ресурс – отличный старт бизнеса в
+                интернете. Сайт-визитка содержит несколько страниц, в том числе
+                – информацию о компании, её товарах и услугах, прейскурант цен,
+                контакты и координаты для связи.
               </p>
               <div class="tariffs__card__foot">
                 <div class="tariffs__card__prices">
-                  <h4 class="tariffs__card__price_1">От 60.000₽</h4>
-                  <p class="tariffs__card__price_2">От 15 дней</p>
+                  <h4 class="tariffs__card__price_1">От 75.000₽</h4>
+                  <p class="tariffs__card__price_2">От 30 дней</p>
                 </div>
                 <button class="tariffs__card__link">
                   <a href="#">Подробнее</a>
                 </button>
               </div>
-            </div>
-            <div class="swiper-slide tariffs__card">
-              <h3 class="tariffs__card__title">Сайт “Каталог”</h3>
+            </label>
+            <!-- <label class="card" for="item-3" id="song-4">
+              <h3 class="tariffs__card__title">Сайт “Landing page”</h3>
               <p class="tariffs__card__desc">
-                Сайт-каталог – это полноценный веб-ресурс, в котором потребители
-                могут ознакомиться с товарами или услугами компании. Являясь
-                удобным инструментом продаж, сайт-каталог может повысить
-                доходность бизнеса и упростить задачу по предоставлению
-                ассортимента целевой аудитории.
+                Одностраничный сайт (Landing Page) – так называют промо-сайты
+                для презентации товара, услуги и организации мгновенных продаж.
+                Мы умеем создавать веб-ресурсы, полностью готовые к наплыву
+                лавины посетителей. Одна-единственная страница принесёт
+                колоссальную прибыль: иначе и быть не может.
               </p>
               <div class="tariffs__card__foot">
                 <div class="tariffs__card__prices">
-                  <h4 class="tariffs__card__price_1">От 60.000₽</h4>
-                  <p class="tariffs__card__price_2">От 15 дней</p>
+                  <h4 class="tariffs__card__price_1">От 25.000₽</h4>
+                  <p class="tariffs__card__price_2">От 17 дней</p>
                 </div>
                 <button class="tariffs__card__link">
                   <a href="#">Подробнее</a>
                 </button>
               </div>
-            </div> -->
+            </label>
+            <label class="card" for="item-3" id="song-5">
+              <h3 class="tariffs__card__title">Сайт “Корп.сайт”</h3>
+              <p class="tariffs__card__desc">
+                Корпоративный сайт – это крупномасштабный портал, который
+                создается не только для контакта организации с клиентами, но и
+                для обмена информацией, мнениями, идеями между сотрудниками и
+                руководством. Электронный ресурс такого типа – лицо компании,
+                солидный «костюм», вызывающий у партнёров и контрагентов
+                уважение и интерес.
+              </p>
+              <div class="tariffs__card__foot">
+                <div class="tariffs__card__prices">
+                  <h4 class="tariffs__card__price_1">От 60.000₽</h4>
+                  <p class="tariffs__card__price_2">От 17 дней</p>
+                </div>
+                <button class="tariffs__card__link">
+                  <a href="#">Подробнее</a>
+                </button>
+              </div>
+            </label> -->
           </div>
-          <div class="tariffs__arrows">
-            <div class="circle">
-              <button class="arrow tariffs__arrow-right"><</button>
-            </div>
-            <div class="circle">
-              <button class="arrow tariffs__arrow-left">></button>
-            </div>
-          </div>
+        </div>
+
+        <div class="tariffs__arrows">
+          <!-- <div class="circle"> -->
+          <img class="left" src="./img/arrow-left.svg" alt="arrow" />
+          <!-- </div> -->
+          <!-- <div class="circle"> -->
+          <img class="right" src="./img/arrow-right.svg" alt="arrow" />
+          <!-- </div> -->
         </div>
       </section>
 
@@ -370,7 +398,7 @@
     </div>
     <script src="./scripts/home-app.js"></script>
     <script src="./scripts/swiper.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> -->
     <script>
       // var tarifr = new Swiper(".tariffs", {
       //   loop: true,

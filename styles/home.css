@@ -56,7 +56,7 @@ body {
   color: white;
 }
 
-header {
+.container__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -64,19 +64,21 @@ header {
   align-items: center;
 }
 
-header img {
+
+
+.container__header img {
   width: 96px;
   height: 66%;
 }
 
-header .links {
+.container__header .links {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 10px;
 }
 
-header .links ul {
+.container__header .links ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -86,18 +88,18 @@ header .links ul {
   transition: all 2s ease-in-out;
 }
 
-header .links ul li a {
+.container__header .links ul li a {
   text-decoration: none;
   color: #fff;
 }
 
-header .links ul li:hover {
+.container__header .links ul li:hover {
   border-top: 5px solid #2eecc5;
   padding-bottom: 10px;
   transition: all 0.2s ease-out;
 }
 
-header .links button {
+.container__header .links button {
   background: rgba(46, 236, 197, 0.1);
   border: 1.5px solid #2eecc5;
   border-radius: 49px;
@@ -107,7 +109,7 @@ header .links button {
   cursor: pointer;
 }
 
-header .links button:hover {
+.container__header .links button:hover {
   /* transform: scale(1.1); */
   transition: all 0.5s ease-out;
   background-color: #004e3f;
@@ -117,22 +119,24 @@ header .links button:hover {
 section {
   max-width: 1927px;
   margin: 0 auto;
-  height: 75vh;
+  /* height: 75vh; */
 }
 
 #container #aboute {
-  display: flex;
+ 
   justify-content: space-between;
   position: relative;
   align-items: center;
   background: url("/img/back1.png") no-repeat;
   background-size: cover;
-  height: 75vh;
+  /* height: 75vh; */
 }
 
 #container section .title {
   max-width: 810px;
   margin-left: 323px;
+  margin-top: 265px;
+  margin-bottom: 365px;
 }
 
 #container section .title h1 {
@@ -211,14 +215,14 @@ section {
 }
 
 #container section .person {
-  width: 1130px;
-  height: 1400px;
-  /* margin-right: -99px; */
+  width: 663px;
+  height: 844px;
   position: absolute;
   left: auto;
-  right: 30px;
+  right: 130px;
   top: auto;
-  bottom: -266px;;
+  bottom: -14px;
+  z-index: 1;
 }
 
 #container section .cicrle {
@@ -226,20 +230,12 @@ section {
   height: 700px;
   z-index: -1;
   position: absolute;
-  right: -98px;
-  bottom: 103px;
+  right: 16px;
+  bottom: 0;
   left: auto;
 }
 
-.line {
-  border-bottom: 1px solid #2eecc5;
-  border-bottom-color: linear-gradient(
-    90deg,
-    rgba(42, 188, 158, 0) 0%,
-    #2abc9e 48.65%,
-    rgba(42, 188, 158, 0) 100%
-  );
-  margin-bottom: 64px;
+.line img {
   width: 100%;
 }
 
@@ -255,6 +251,7 @@ section {
   /* margin-left: 323px; */
   height: 75vh;
   margin: 0 auto;
+  margin-top: 105px;
 }
 
 #cooperation .cards {
@@ -350,12 +347,13 @@ section {
   box-shadow: 0px 0px 150px rgba(59, 95, 150, 0.35);
   border-radius: 6px;
   /* transform: scale(1.1); */
-  transition: all 0.5s ease-out;
+  transition: all 0.6s ease-out;
+  /* filter: brightness(0.5); */
 }
 
 #cooperation .card:hover img {
-  filter: brightness(0.1);
-  transition: all 0.5s ease-out;
+  filter: brightness(50%);
+  transition: all 0.8s ease-out;
 }
 
 #cooperation .card:hover .card__texts {
@@ -421,6 +419,177 @@ section {
   position: relative;
 }
 
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
+
+#tariffs input[type="radio"] {
+  display: none;
+}
+#tariffs {
+  position: relative;
+  height: 75vh;
+}
+#tariffs .card {
+  position: absolute;
+  width: 60%;
+  /* height: 100%; */
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+  /* width: 370px;
+  height: 570px; */
+  background: linear-gradient(
+    168.64deg,
+    #313134 9.31%,
+    #292929 61.88%,
+    #282828 111.76%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 36px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#tariffs .card .tariffs__card__desc {
+  text-align: center;
+}
+
+#tariffs .container {
+  width: 100%;
+  max-width: 800px;
+  max-height: 600px;
+  height: 100%;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#tariffs .cards {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+#tariffs #item-1:checked ~ .cards #song-3,
+#tariffs #item-2:checked ~ .cards #song-1,
+#tariffs #item-3:checked ~ .cards #song-2 {
+  transform: translatex(-90%) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+#tariffs #item-1:checked ~ .cards #song-2,
+#tariffs #item-2:checked ~ .cards #song-3,
+#tariffs #item-3:checked ~ .cards #song-1 {
+  transform: translatex(90%) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+#tariffs #item-1:checked ~ .cards #song-1,
+#tariffs #item-2:checked ~ .cards #song-2,
+#tariffs #item-3:checked ~ .cards #song-3 {
+  transform: translatex(0) scale(1);
+  opacity: 1;
+  z-index: 1;
+}
+
+#tariffs .player {
+  background-color: #fff;
+  border-radius: 8px;
+  min-width: 320px;
+  padding: 16px 10px;
+}
+
+#tariffs .upper-part {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  height: 36px;
+  overflow: hidden;
+}
+
+#tariffs .play-icon {
+  margin-right: 10px;
+}
+
+#tariffs .song-info {
+  width: calc(100% - 32px);
+  display: block;
+}
+
+#tariffs .song-info .title {
+  color: #403d40;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+#tariffs .sub-line {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#tariffs .subtitle,
+#tariffs .time {
+  font-size: 12px;
+  line-height: 16px;
+  color: #c6c5c6;
+}
+
+#tariffs .time {
+  font-size: 12px;
+  line-height: 16px;
+  color: #a5a5a5;
+  font-weight: 500;
+  margin-left: auto;
+}
+
+#tariffs .progress-bar {
+  height: 3px;
+  width: 100%;
+  background-color: #e9efff;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+#tariffs .progress {
+  display: block;
+  position: relative;
+  width: 60%;
+  height: 100%;
+  background-color: #2992dc;
+  border-radius: 6px;
+}
+
+#tariffs .info-area {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 30px;
+  transition: transform 0.4s ease-in;
+}
+
+#tariffs #item-2:checked ~ .player #test {
+  transform: translateY(0);
+}
+
+#tariffs #item-2:checked ~ .player #test {
+  transform: translateY(-40px);
+}
+
+#tariffs #item-3:checked ~ .player #test {
+  transform: translateY(-80px);
+}
+
 #portfolio .portfolio__slider {
   display: flex;
 }
@@ -448,14 +617,24 @@ section {
   width: 570px;
 }
 
-#portfolio .swiper-button-prev {
-  left: 987px;
+#portfolio .portfolio__arrows .left {
+  position: absolute;
+  left: 876px;
   right: auto;
+  bottom: 415px;
+  cursor: pointer;
+  color: #2c8e7a;
+  z-index: 10;
 }
 
-#portfolio .swiper-button-next {
+#portfolio .portfolio__arrows .right {
+  position: absolute;
   left: auto;
-  right: 263px;
+  right: 150px;
+  cursor: pointer;
+  color: #2c8e7a;
+  bottom: 415px;
+  z-index: 10;
 }
 #portfolio .portfolio__arrows .cicrle {
   border: 1.5px solid #153630;
@@ -551,7 +730,7 @@ section {
   position: relative;
 }
 
-.tariffs .tariffs__title {
+#tariffs .tariffs__title {
   background: linear-gradient(87.77deg, #b5feef 10.96%, #2eecc5 259.77%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -606,7 +785,7 @@ section {
   color: rgba(255, 255, 255, 0.75);
   width: 311px;
   height: 285px;
-  margin: 0 30px;
+  margin: 0 auto;
 }
 
 .tariffs__card__price_1 {
@@ -651,9 +830,26 @@ section {
   margin: 71px 18px 20px 18px;
 }
 
-.tariffs__arrows {
+/* .tariffs__arrows {
   display: flex;
   justify-content: space-between;
+  position: absolute;
+} */
+
+.tariffs__arrows .right {
+  position: absolute;
+  left: auto;
+  right: 197px;
+  bottom: 562px;
+  cursor: pointer;
+}
+
+.tariffs__arrows .left {
+  position: absolute;
+  left: 199px;
+  right: auto;
+  bottom: 562px;
+  cursor: pointer;
 }
 
 .tariffs__arrows .arrow {
@@ -871,26 +1067,6 @@ section {
   padding-bottom: 40px;
 }
 
-@media screen and (max-width: 1645px) {
-  #container section .person {
-    width: 780px;
-    height: 999px;
-    /* margin-right: -99px; */
-    position: absolute;
-    left: auto;
-    right: 30px;
-    top: auto;
-    bottom: -190px;
-  }
-}
-@media screen and (max-width: 1888px) {
-  #container section .person {
-    width: 932px;
-    height: 1210px;
-    bottom: -230px;
-  }
-}
-
 @media screen and (max-width: 1615px) {
   header {
     margin: 50px 110px 0px 110px;
@@ -957,12 +1133,6 @@ section {
     margin-bottom: 0px;
     width: 514px;
   }
-
-  #container section .person {
-    width: 823px;
-    height: 1120px;
-    bottom: -213px;
-  }
 }
 
 @media screen and (max-width: 1135px) {
@@ -987,12 +1157,6 @@ section {
     font-size: 12px;
     margin-bottom: 0px;
     width: 450px;
-  }
-
-  #container section .person {
-    width: 823px;
-    height: 1120px;
-    bottom: -213px;
   }
 }
 
@@ -1019,10 +1183,6 @@ section {
     margin-bottom: 0px;
     width: 450px;
   }
-
-  #container section .person {
-    right: -70px;
-  }
 }
 
 @media screen and (max-width: 945px) {
@@ -1048,10 +1208,6 @@ section {
     margin-bottom: 0px;
     width: 450px;
   }
-
-  #container section .person {
-    right: -150px;
-  }
 }
 
 @media screen and (max-width: 800px) {
@@ -1065,6 +1221,7 @@ section {
 
   header img {
     float: right;
+    visibility: visible;
   }
   #container section .title {
     width: 450px;
@@ -1084,10 +1241,6 @@ section {
     font-size: 13px;
     margin-bottom: 0px;
     width: 450px;
-  }
-
-  #container section .person {
-    right: -150px;
   }
 
   #cooperation {
@@ -1130,40 +1283,9 @@ section {
     width: 169px;
     height: 175px;
   }
-  #cooperation .card .person {
-    width: 151px;
-    height: 172px;
-  }
+
   #cooperation .card .emplay {
     width: 169px;
     height: 158px;
-  }
-}
-
-@media screen and (max-width: 800px) {
-
-  header img{
-    display: block !important;
-  }
-
-  #container #aboute {
-    height: 65vh;
-}
-
-  #container section .person {
-    width: 739px;
-    height: 951px;
-    bottom: -181px;
-  }
-  #container section .title h1 {
-    font-size: 40px;
-    line-height: 50px;
-  }
-  #container section .title h3 {
-    display: none;
-  }
-  #container section .title .btns a {
-    
-    display: none;
   }
 }
